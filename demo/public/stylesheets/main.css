@@ -53,14 +53,11 @@ body {
   }
   /* Small devices (tablets)
   ==========================*/
-  @media (min-width: 768px) {
-  
-  }
-  
+
   
   /* Medium devices (desktops)
   ==========================*/
-  @media (min-width: 992px) {
+  /* @media (min-width: 992px) {
   
     body {
       overflow-y: scroll;
@@ -81,7 +78,7 @@ body {
       margin-left: 50px;
     }
   
-  }
+  } */
   
 
 h1 {

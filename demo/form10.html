@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="en">
 
 <head>
-        <title>เว็ปไซต์สมัครงาน</title>
+    <meta charset="UTF-8">
+    <title>เว็ปไซต์สมัครงาน</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link href='../src/vendor/normalize.css/normalize.css' rel='stylesheet'>
+    <link href='../src/vendor/fontawesome/css/font-awesome.min.css' rel='stylesheet'>
+    <link href="../dist/vertical-responsive-menu.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="public/stylesheets/main.css">
+    <link rel="stylesheet" href="public/stylesheets/style-table.css">
+    <link rel="stylesheet" href="public/stylesheets/validationEngine.jquery.css" />
+
 
 </head>
 
-<link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
-<link rel="stylesheet" href="public/stylesheets/main.css" type="text/css">
-<link rel="stylesheet" href="public/stylesheets/style-table.css">
-<link rel="stylesheet" href="public/stylesheets/validationEngine.jquery.css" type="text/css" />
-<link rel="stylesheet" href="public/stylesheets/Untitled-1.css">
-
-
-
 <!-- bootstrap -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+<script src="public/javascripts/jquery-3.3.1.min"></script>
+<script src="public/javascripts/bootstrap.min.js"></script>
+<script src="public/javascripts/bootstrap.min.js.map"></script>
+<script src="public/javascripts/bootstrap.bundle.min.js"></script>
+<script src="public/javascripts/bootstrap.bundle.min.js.map"></script>
+
+
 
 
 
 <script src="public/javascripts/jquery-1.8.2.min.js" type="text/javascript"></script>
 <script src="public/javascripts/jquery.validationEngine-th.js" type="text/javascript" charset="utf-8"></script>
 <script src="public/javascripts/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+<script src="../dist/vertical-responsive-menu.min.js"></script>
+
 
 <script src="public/javascripts/jsTable.js"></script>
 
@@ -60,89 +66,93 @@
         </style>
 
 <body>
-    <!-- <video autoplay loop id="video-background" muted plays-inline>
-        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-    </video> -->
+    <header class="header clearfix">
+        <button type="button" id="toggleMenu" class="toggle_menu">
+            <i class="fa fa-bars"></i>
+        </button>
+        <h1>เว็ปไซต์สมัครงาน</h1>
+    </header>
 
-    <div class="container_PA">
-        <form method="post" id="form10" class="needs-validation " novalidate>
-            <div class="form-row">
-                <ul class="mcd-menu">
-                    <li>
-                        <a href="index.html">
-                            <img src="public/stylesheets/png/009-one.png" width="25" height="25">
-                            <strong>ประวัติส่วนตัว</strong>
-                            <small>Personal Data</small>
+    <nav class="vertical_nav">
+        <ul id="js-menu" class="menu">
 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="form2.html">
-                            <img src="public/stylesheets/png/008-two.png" width="25" height="25">
-                            <strong>รายละเอียดครอบครัว</strong>
-                            <small>Family Data</small>
+            <li class="menu--item">
+                <a href="index.html" class="menu--link">
+                    <img src="public/stylesheets/png/009-one.png" width="25" height="25" class="menu--icon">
+                    <strong class="menu--label">ประวัติส่วนตัว</strong>
 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="form3.html">
-                            <img src="public/stylesheets/png/007-three.png" width="25" height="25">
-                            <strong>ประวัติการศึกษา</strong>
-                            <small>Education</small>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="form4.html">
-                            <img src="public/stylesheets/png/006-four.png" width="25" height="25">
-                            <strong>ประวัติการทำงาน/ประวัตการฝึกอบรม</strong>
-                            <small>Working Experience From Current Onwards</small>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="form5.html" id="nav-form5">
-                            <img src="public/stylesheets/png/005-five.png" width="25" height="25">
-                            <strong>ความสามในการใช้ภาษาต่างประเทศ <br>และคอมพิวเตอร์</strong>
-                            <small>Languages and Computer Ability</small>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="form6.html" id="nav-form6">
-                            <img src="public/stylesheets/png/004-six.png" width="25" height="25">
-                            <strong>บุคคลที่ติดต่อได้โดยไม่ใช่ญาติพี่น้อง/ <br> กรณีเร่งด่วนที่สามารถติดต่อข้าพเจ้าได้</strong>
-                            <small>name of persib not related to application to whom reference may be made/ Emergency
-                                Contact </small>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="form9.html">
-                            <img src="public/stylesheets/png/003-seven.png" width="25" height="25">
-                            <strong>สุขภาพ</strong>
-                            <small>Health</small>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="form10.html" class="active">
-                            <img src="public/stylesheets/png/002-eight.png" width="25" height="25">
-                            <strong>รายละเอียดอื่นๆ</strong>
-                            <small>Other</small>
-                        </a>
-                    </li>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="form2.html" class="menu--link">
+                    <img src="public/stylesheets/png/008-two.png" width="25" height="25" class="menu--icon">
+                    <strong class="menu--label">รายละเอียดครอบครัว</strong>
 
-                </ul>
-                </nav>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="form3.html" class="menu--link">
+                    <img src="public/stylesheets/png/007-three.png" width="25" height="25" class="menu--icon">
+                    <strong class="menu--label">ประวัติการศึกษา</strong>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="form4.html" class="menu--link">
+                    <img src="public/stylesheets/png/006-four.png" width="25" height="25" class="menu--icon">
+                    <strong class="menu--label">ประวัติการทำงาน/ประวัตการฝึกอบรม</strong>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="form5.html" class="menu--link" id="nav-form5">
+                    <img src="public/stylesheets/png/005-five.png" width="25" height="25" class="menu--icon">
+                    <strong class="menu--label">ความสามในการใช้ภาษาต่างประเทศ <br> และคอมพิวเตอร์</strong>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="form6.html" class="menu--link">
+                    <img src="public/stylesheets/png/004-six.png" width="25" height="25" class="menu--icon">
+                    <strong class="menu--label">บุคคลที่ติดต่อได้โดยไม่ใช่ญาติพี่น้อง</strong>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="form9.html" class="menu--link">
+                    <img src="public/stylesheets/png/003-seven.png" width="25" height="25" class="menu--icon">
+                    <strong class="menu--label">สุขภาพ</strong>
+                </a>
+            </li>
+            <li class="menu--item">
+                <a href="form10.html" class="menu--link">
+                    <img src="public/stylesheets/png/002-eight.png" width="25" height="25" class="menu--icon">
+                    <strong class="menu--label">รายละเอียดอื่นๆ</strong>
+                </a>
+            </li>
+        </ul>
+
+        <button id="collapse_menu" class="collapse_menu">
+            <i class="collapse_menu--icon  fa fa-fw"></i>
+            <span class="collapse_menu--label">ซ่อนแถบเมนู</span>
+        </button>
+
+    </nav>
+
+
+    <div class="wrapper">
+        <div class="container_PA">
+            <form method="POST" id="form1" class="needs-validation" novalidate>
+
                 <fieldset>
                     <div id="ribbon"></div>
 
                     <div class="table100 ver5 m-b-110 ">
-                            <table data-vertable="ver5">
-                                <thead>
-                                    <tr class="row100 head head1">
-                                        <th class="column100 column1 " data-column="column1">รายละเอียดอื่นๆ</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
-              
+                        <table data-vertable="ver5">
+                            <thead>
+                                <tr class="row100 head head1">
+                                    <th class="column100 column1 " data-column="column1">รายละเอียดอื่นๆ</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
 
                     <div class="form-group">
                         <label>ท่านสมัครงานในบริษัทฯ นี้เป็นครั้งแรกหรือไม่</label>
@@ -219,17 +229,17 @@
 
                         <div class="acquain" style="display:none;">
                             <div class="form-row">
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <label>ชื่อ-นามสกุล</label>
                                     <input type="text" name="acquain_name" id="acquain_name" class="form-control">
                                 </div>
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <label>ความสัมพันธ์ </label>
                                     <div class="form-holder">
                                         <input type="text" name="acquain_rela" id="acquain_rela" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <label>หน่วยงาน </label>
                                     <div class="form-holder">
                                         <input type="text" name="acquain_depart" id="acquain_depart" class="form-control">
@@ -237,17 +247,17 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <label>ชื่อ-นามสกุล</label>
                                     <input type="text" name="acquain_name2" id="acquain_name2" class="form-control">
                                 </div>
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <label>ความสัมพันธ์ </label>
                                     <div class="form-holder">
                                         <input type="text" name="acquain_rela2" id="acquain_rela2" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <label>หน่วยงาน </label>
                                     <div class="form-holder">
                                         <input type="text" name="acquain_depart2" id="acquain_depart2" class="form-control">
@@ -315,133 +325,132 @@
 
                     <hr class="hr-primary">
 
-                    <div class="fieldset-content">
-                        <div class="table100 ver5 m-b-110">
-                            <table data-vertable="ver5">
-                                <thead>
-                                    <tr class="row100 head">
-                                        <th class="column100 column1" id="column1" data-column="column1">สวัสดิการอื่นจากทีทำงานปัจจุบันล่าสุดต่อเดือน</th>
-                                        <th class="column100 column2" data-column="column2"></th>
 
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-
-
-                                    <tr class="row100">
-                                        <td class="column100 column1" data-column="column1">เงินโบนัส</td>
-                                        <td>
-                                            <div class="input-group">
-                                                <input name="my_bonus" id="my_bonus" type="number" class="column100 column2 form-control col-3"
-                                                    data-column="column2">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">บาท</span>
-                                                </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th id="table1_name" scope="col">สวัสดิการอื่นจากทีทำงานปัจจุบันล่าสุดต่อเดือน</th>
+                                    <th id="table1_age" scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row100">
+                                    <th scope="row">เงินโบนัส</th>
+                                    <td>
+                                        <div class="input-group">
+                                            <input name="my_bonus" id="my_bonus" type="number" class="column100 column2 form-control col-sm-3"
+                                                data-column="column2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
-                                        </td>
-                                    </tr>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                                    <tr class="row100">
-                                        <td class="column100 column1" data-column="column1">เงินกองทุนสำรองเลี้ยงชีพ</td>
-                                        <td>
-                                            <div class="input-group">
-                                                <input name="my_reserve" id="my_reserve" type="number" class="column100 column2 form-control col-3"
-                                                    data-column="column2">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">บาท</span>
-                                                </div>
+
+
+                                <tr class="row100">
+                                    <td class="column100 column1" data-column="column1">เงินกองทุนสำรองเลี้ยงชีพ</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input name="my_reserve" id="my_reserve" type="number" class="column100 column2 form-control col-sm-3"
+                                                data-column="column2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
-                                        </td>
-                                    </tr>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                                    <tr class="row100">
-                                        <td class="column100 column1" data-column="column1">ค่ารักษาพยาบาล</td>
-                                        <td>
-                                            <div class="input-group">
-                                                <input name="my_medical" id="my_medical" type="number" class="column100 column2 form-control col-3"
-                                                    data-column="column2">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">บาท</span>
-                                                </div>
+                                <tr class="row100">
+                                    <td class="column100 column1" data-column="column1">ค่ารักษาพยาบาล</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input name="my_medical" id="my_medical" type="number" class="column100 column2 form-control col-sm-3"
+                                                data-column="column2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
-                                        </td>
-                                    </tr>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                                    <tr class="row100">
-                                        <td class="column100 column1" data-column="column1">ประกันชีวิต</td>
-                                        <td>
-                                            <div class="input-group">
-                                                <input name="Life_insurance" id="Life_insurance" type="number" class="column100 column2 form-control col-3"
-                                                    data-column="column2">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">บาท</span>
-                                                </div>
+                                <tr class="row100">
+                                    <td class="column100 column1" data-column="column1">ประกันชีวิต</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input name="Life_insurance" id="Life_insurance" type="number" class="column100 column2 form-control col-sm-3"
+                                                data-column="column2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
-                                        </td>
-                                    </tr>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                                    <tr class="row100">
-                                        <td class="column100 column1" data-column="column1">ค่าตำแหน่ง</td>
-                                        <td>
-                                            <div class="input-group">
-                                                <input name="Position_value" id="Position_value" type="number" class="column100 column2 form-control col-3"
-                                                    data-column="column2">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">บาท</span>
-                                                </div>
+                                <tr class="row100">
+                                    <td class="column100 column1" data-column="column1">ค่าตำแหน่ง</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input name="Position_value" id="Position_value" type="number" class="column100 column2 form-control col-sm-3"
+                                                data-column="column2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
-                                        </td>
+                                        </div>
+                                    </td>
 
-                                    </tr>
+                                </tr>
 
-                                    <tr class="row100">
-                                        <td class="column100 column1" data-column="column1">ค่าพาหนะ</td>
-                                        <td>
-                                            <div class="input-group">
-                                                <input name="traveling_expen" id="traveling_expen" type="number" class="column100 column2 form-control col-3"
-                                                    data-column="column2">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">บาท</span>
-                                                </div>
+                                <tr class="row100">
+                                    <td class="column100 column1" data-column="column1">ค่าพาหนะ</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input name="traveling_expen" id="traveling_expen" type="number" class="column100 column2 form-control col-sm-3"
+                                                data-column="column2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
-                                        </td>
-                                    </tr>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                                    <tr class="row100">
-                                        <td class="column100 column1" data-column="column1">ค่าครองชีพ/เบี้ยขยัน</td>
-                                        <td>
-                                            <div class="input-group">
-                                                <input name="diligence" id="diligence" type="number" class="column100 column2 form-control col-3"
-                                                    data-column="column2">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">บาท</span>
-                                                </div>
+                                <tr class="row100">
+                                    <td class="column100 column1" data-column="column1">ค่าครองชีพ/เบี้ยขยัน</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input name="diligence" id="diligence" type="number" class="column100 column2 form-control col-sm-3"
+                                                data-column="column2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
-                                        </td>
-                                    </tr>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                                    <tr class="row100">
-                                        <td class="column100 column1" data-column="column1">เงินช่วยเหลือ/อื่นๆ</td>
-                                        <td>
-                                            <div class="input-group">
-                                                <input name="Subsidy" id="Subsidy" type="number" class="column100 column2 form-control col-3"
-                                                    data-column="column2">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text" id="basic-addon2">บาท</span>
-                                                </div>
+                                <tr class="row100">
+                                    <td class="column100 column1" data-column="column1">เงินช่วยเหลือ/อื่นๆ</td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input name="Subsidy" id="Subsidy" type="number" class="column100 column2 form-control col-sm-3"
+                                                data-column="column2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
-                                        </td>
-                                    </tr>
-                            </table>
-                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
-                    
-                            <button type="submit" id="btn_next" class="button"><span>ต่อไป &#8594;</span>
-                            
+                  
+
+                    <button type="submit" id="btn_next" class="button"><span>ต่อไป &#8594;</span>
+
                 </fieldset>
-            </div>
+        </div>
         </form>
     </div>
 
@@ -553,16 +562,16 @@
 
 
 
-                sessionStorage.first_regis3  = $("#first_regis3").val();
-                sessionStorage.outside3  = $("#outside3").val();
-                sessionStorage.acquain_name  = $("#acquain_name").val();
-                sessionStorage.acquain_rela  = $("#acquain_rela").val();
-                sessionStorage.acquain_depart  = $("#acquain_depart").val();
-                sessionStorage.acquain_name2  = $("#acquain_name2").val();
-                sessionStorage.acquain_rela2  = $("#acquain_rela2").val();
-                sessionStorage.acquain_depart2  = $("#acquain_depart2").val();
-                sessionStorage.prison3  = $("#prison3").val();
-                sessionStorage.my_club3  = $("#my_club3").val();
+                sessionStorage.first_regis3 = $("#first_regis3").val();
+                sessionStorage.outside3 = $("#outside3").val();
+                sessionStorage.acquain_name = $("#acquain_name").val();
+                sessionStorage.acquain_rela = $("#acquain_rela").val();
+                sessionStorage.acquain_depart = $("#acquain_depart").val();
+                sessionStorage.acquain_name2 = $("#acquain_name2").val();
+                sessionStorage.acquain_rela2 = $("#acquain_rela2").val();
+                sessionStorage.acquain_depart2 = $("#acquain_depart2").val();
+                sessionStorage.prison3 = $("#prison3").val();
+                sessionStorage.my_club3 = $("#my_club3").val();
 
 
                 sessionStorage.my_bonus = $("#my_bonus").val();
