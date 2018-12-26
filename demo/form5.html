@@ -142,16 +142,16 @@
     
         <div class="wrapper">
             <div class="container_PA">
-                <form method="POST" id="form1" class="needs-validation" novalidate>
+                <form method="POST" id="form5" class="needs-validation" novalidate>
     
 
                 <fieldset>
-                    <div id="ribbon"></div>
+
                     <div class="table100 ver5 m-b-110 ">
                         <table data-vertable="ver5">
                             <thead>
                                 <tr class="row100 head head1">
-                                    <th class="column100 column1 " data-column="column1">ความสามในการใช้ภาษาต่างประเทศและคอมพิวเตอร์
+                                    <th >ความสามในการใช้ภาษาต่างประเทศและคอมพิวเตอร์
                                         <br> (Languages and Computer Ability)</th>
                                 </tr>
                             </thead>
@@ -166,14 +166,14 @@
                             <table data-vertable="ver5">
                                 <thead>
                                     <tr class="row100 head">
-                                        <th class="column100 column1" id="column1" data-column="column1">พูด</th>
-                                        <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
-                                        <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                                        <th scope="col">พูด</th>
+                                        <th scope="col">อ่าน</th>
+                                        <th scope="col">เขียน</th>
                                     </tr>
                                 </thead>
-
                                 <tbody>
                                     <tr class="row100">
+
                                         <td>
                                             <div class="form-row">
 
@@ -188,7 +188,6 @@
                                                     <label for="speaking_thai2" class="custom-control-label">พอใช้</label>
                                                 </div>
                                             </div>
-
                                         </td>
 
                                         <td>
@@ -221,6 +220,7 @@
                                                 </div>
                                             </div>
                                         </td>
+
                                     </tr>
                                 </tbody>
                             </table>
@@ -232,9 +232,9 @@
                             <table data-vertable="ver5">
                                 <thead>
                                     <tr class="row100 head">
-                                        <th class="column100 column1" id="column1" data-column="column1">พูด</th>
-                                        <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
-                                        <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                                        <th scope="col">พูด</th>
+                                        <th scope="col">อ่าน</th>
+                                        <th scope="col">เขียน</th>
                                     </tr>
                                 </thead>
 
@@ -296,9 +296,9 @@
                             <table data-vertable="ver5">
                                 <thead>
                                     <tr class="row100 head">
-                                        <th class="column100 column1" id="column1" data-column="column1">พูด</th>
-                                        <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
-                                        <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                                        <th scope="col">พูด</th>
+                                        <th scope="col">อ่าน</th>
+                                        <th scope="col">เขียน</th>
                                     </tr>
                                 </thead>
 
@@ -360,9 +360,9 @@
                             <table data-vertable="ver5">
                                 <thead>
                                     <tr class="row100 head">
-                                        <th class="column100 column1" id="column1" data-column="column1">พูด</th>
-                                        <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
-                                        <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                                        <th scope="col">พูด</th>
+                                        <th scope="col">อ่าน</th>
+                                        <th scope="col">เขียน</th>
                                     </tr>
                                 </thead>
 
@@ -425,49 +425,45 @@
                     <label>ความสามารถด้านคอมพิวเตอร์</label>
                     <div class="form-row">
 
-                        <div class="form-group">
+                     
                             <label>สามารถพิมพ์ดีดภาษาไทยได้นาทีละ</label>
                             <div class="input-group">
-                                <input type="number" name="com_thai_write" id="com_thai_write" class="form-control col-6"
+                                <input type="number" name="com_thai_write" id="com_thai_write" class="form-control col-sm-6"
                                     aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">คำ/นาที</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
+                     
                             <label>สามารถพิมพ์ดีดภาษาอังกฤษได้นาทีละ</label>
                             <div class="input-group">
-                                <input type="number" name="com_eng_write" id="com_eng_write" class="form-control col-6"
+                                <input type="number" name="com_eng_write" id="com_eng_write" class="form-control col-sm-6"
                                     aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <span class="input-group-text" id="basic-addon2">คำ/นาที</span>
                                 </div>
                             </div>
-                        </div>
+                      
                     </div>
 
                     <hr>
 
                     <label>โปรแกรมคอมพิวเตอร์</label>
-                    <div class="form-group ">
-                        <input type="text" name="com_lang1" id="com_lang1" class="form-control col-6">
-                        <input type="text" name="com_lang2" id="com_lang2" class="form-control col-6">
-                        <input type="text" name="com_lang3" id="com_lang3" class="form-control col-6">
-
-                    </div value="{{ form5.com_eng_write }}">
+                        <input type="text" name="com_lang1" id="com_lang1" class="form-control col-sm-6">
+                        <input type="text" name="com_lang2" id="com_lang2" class="form-control col-sm-6">
+                        <input type="text" name="com_lang3" id="com_lang3" class="form-control col-sm-6">
 
                     <hr class="hr-primary">
 
                     <div class="form-row">
 
-                        <div class="form-group col-3">
+                        <div class="col-sm-3">
                             <label>ความสามารถพิเศษอื่นๆ</label>
                             <input type="text" name="any_abilites1" id="any_abilites1" class="form-control">
                             <input type="text" name="any_abilites2" id="any_abilites2" class="form-control">
                         </div>
 
-                        <div class="form-group col-3">
+                        <div class="col-sm-3">
                             <label>งานอดิเรก</label>
                             <input type="text" name="hobblies1" id="hobblies1" class="form-control">
                             <input type="text" name="hobblies2" id="hobblies2" class="form-control">
@@ -555,6 +551,7 @@
             </div>
         </form>
     </div>
+    <script src="../dist/vertical-responsive-menu.min.js"></script>
 
     <script src="getParamsFromUrl.js"></script>
     <script src="getDataStorageForm5.js"></script>

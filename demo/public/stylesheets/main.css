@@ -408,12 +408,16 @@ hr {
     border:none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     padding: 15px;
-    width: 150px;
+    width: 250px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+  }
+
+  .button a{
+      color: #fff;
   }
   
   .button span {

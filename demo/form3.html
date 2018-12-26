@@ -66,6 +66,7 @@
               
               </style>
 
+
 <body>
         <header class="header clearfix">
                 <button type="button" id="toggleMenu" class="toggle_menu">
@@ -73,6 +74,9 @@
                 </button>
                 <h1>เว็ปไซต์สมัครงาน</h1>
         </header>
+
+
+
 
         <nav class="vertical_nav">
                 <ul id="js-menu" class="menu">
@@ -133,17 +137,15 @@
                         <i class="collapse_menu--icon  fa fa-fw"></i>
                         <span class="collapse_menu--label">ซ่อนแถบเมนู</span>
                 </button>
-
         </nav>
 
 
         <div class="wrapper">
                 <div class="container_PA">
-                        <form method="POST" id="form1" class="needs-validation" novalidate>
-
+                        <form method="POST" id="form3" class="needs-validation" novalidate>
 
                                 <fieldset>
-                                        <div id="ribbon"></div>
+
                                         <div class="table100 ver5 m-b-110 ">
                                                 <table data-vertable="ver5">
                                                         <thead>
@@ -154,21 +156,23 @@
                                                 </table>
                                         </div>
 
-                                        <div class="table100 ver5 m-b-110">
-                                                <table data-vertable="ver5">
+
+
+                                        <div class="table100 ver5">
+                                                <table class="flip-scroll responsive-table" data-vertable="ver5">
                                                         <thead>
-                                                                <tr class="row100 head">
-                                                                        <th class="column100 column1" data-column="column1">ระดับการศึกษา</th>
-                                                                        <th class="column100 column2" data-column="column2">ชื่อสถานศึกษา</th>
-                                                                        <th class="column100 column3" data-column="column3">วุฒิที่ได้รับ</th>
-                                                                        <th class="column100 column4" data-column="column4">สาขาวิชา</th>
-                                                                        <th class="column100 column5" data-column="column5">ปี
+                                                                <tr class="row100">
+                                                                        <th scope="col">ระดับการศึกษา</th>
+                                                                        <th scope="col">ชื่อสถานศึกษา</th>
+                                                                        <th scope="col">วุฒิที่ได้รับ</th>
+                                                                        <th scope="col">สาขาวิชา</th>
+                                                                        <th scope="col">ปี
                                                                                 พ.ศ.
                                                                                 ที่เริ่มศึกษา</th>
-                                                                        <th class="column100 column6" data-column="column6">ปี
+                                                                        <th scope="col">ปี
                                                                                 พ.ศ.
                                                                                 ที่สำเร็จ</th>
-                                                                        <th class="column100 column7" data-column="column7">เกรดเฉลี่ย</th>
+                                                                        <th scope="col">เกรดเฉลี่ย</th>
 
                                                                 </tr>
                                                         </thead>
@@ -399,24 +403,24 @@
 
                                         <hr class="hr-primary">
 
-                                        <div class="form-group">
-                                                <label>กิจกรรมพิเศษระหว่างการศึกษา</label>
-                                                <input class="form-control col-3" name="ed_act_1" id="ed_act_1" type="text"
-                                                        placeholder="ex : กิจกรรมวิ่งมาราธอน">
-                                                <input type="text" name="ed_act_2" id="ed_act_2" class="form-control col-3"
-                                                        placeholder="ex:เข้าร่วม SC camp">
-                                                <input type="text" name="ed_act_3" id="ed_act_3" class="form-control col-3"
-                                                        placeholder="ex:เข้าร่วมค่ายอาสา">
-                                        </div>
-                                        <div class="form-group">
-                                                <label>การฝึกอบรมพิเศษ</label>
-                                                <input class="form-control col-3" name="ed_train_1" id="ed_train_1"
-                                                        type="text" placeholder="ex : กิจกรรมวิ่งมาราธอน">
-                                                <input type="text" name="ed_train_2" id="ed_train_2" class="form-control col-3"
-                                                        placeholder="ex:เข้าร่วม SC camp">
-                                                <input type="text" name="ed_train_3" id="ed_train_3" class="form-control col-3"
-                                                        placeholder="ex:เข้าร่วมค่ายอาสา">
-                                        </div>
+
+                                        <label>กิจกรรมพิเศษระหว่างการศึกษา</label>
+                                        <input class="form-control col-sm-3" name="ed_act_1" id="ed_act_1" type="text"
+                                                placeholder="ex : กิจกรรมวิ่งมาราธอน">
+                                        <input type="text" name="ed_act_2" id="ed_act_2" class="form-control col-sm-3"
+                                                placeholder="ex:เข้าร่วม SC camp">
+                                        <input type="text" name="ed_act_3" id="ed_act_3" class="form-control col-sm-3"
+                                                placeholder="ex:เข้าร่วมค่ายอาสา">
+
+
+                                        <label>การฝึกอบรมพิเศษ</label>
+                                        <input class="form-control col-sm-3" name="ed_train_1" id="ed_train_1" type="text"
+                                                placeholder="ex : กิจกรรมวิ่งมาราธอน">
+                                        <input type="text" name="ed_train_2" id="ed_train_2" class="form-control col-sm-3"
+                                                placeholder="ex:เข้าร่วม SC camp">
+                                        <input type="text" name="ed_train_3" id="ed_train_3" class="form-control col-sm-3"
+                                                placeholder="ex:เข้าร่วมค่ายอาสา">
+
 
                                         <button type="submit" id="btn_next" class="button"><span>ต่อไป &#8594;</span>
 
@@ -424,6 +428,8 @@
                 </div>
                 </form>
         </div>
+
+        <script src="../dist/vertical-responsive-menu.min.js"></script>
 
         <script src="getParamsFromUrl.js"></script>
         <script src="getDataStorageForm3.js"></script>

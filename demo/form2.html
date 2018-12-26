@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="public/stylesheets/main.css">
-
+    <link rel="stylesheet" href="public/stylesheets/style-table.css">
     <link rel="stylesheet" href="public/stylesheets/validationEngine.jquery.css" />
 
 
@@ -33,6 +33,7 @@
 <script src="public/javascripts/jquery.validationEngine-th.js" type="text/javascript" charset="utf-8"></script>
 <script src="public/javascripts/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
 <script src="../dist/vertical-responsive-menu.min.js"></script>
+<script src="public/javascripts/jsTable.js"></script>
 
 
 
@@ -134,7 +135,7 @@
             <form method="POST" id="form2" class="needs-validation" novalidate>
 
                 <fieldset>
-                    <div id="ribbon"></div>
+          
 
                     <div class="table100 ver5 m-b-110 ">
                         <table data-vertable="ver5">
@@ -255,19 +256,19 @@
                         </div>
                     </div>
 
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th id="table1_name">ชื่อ-นามสกุล</td>
-                                    <th id="table1_age">อายุ</td>
-                                    <th id="table1_career">อาชีพ</td>
-                                    <th id="table1_where">สถานที่ทำงาน</td>
-                                    <th id="table1_tel">โทรศัพท์</th>
+                    <div class="table100 ver5">
+                            <table class="flip-scroll responsive-table" data-vertable="ver5">
+                                    <thead>
+                                            <tr class="row100">
+                                    <th scope="col">ชื่อ-นามสกุล</td>
+                                    <th scope="col">อายุ</td>
+                                    <th scope="col">อาชีพ</td>
+                                    <th scope="col">สถานที่ทำงาน</td>
+                                    <th scope="col">โทรศัพท์</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr class="row100">
                                     <td><input name="bro_name1" id="bro_name1" type="text" class="form-control" /></td>
                                     <td><input name="bro_old1" id="bro_old1" type="number" class="form-control" /></td>
                                     <td><input name="bro_career1" id="bro_career1" type="text" class="form-control" /></td>
@@ -275,7 +276,7 @@
                                     <td><input name="bro_tel1" id="bro_tel1" type="number" class="form-control" /></td>
                                 </tr>
 
-                                <tr>
+                                <tr class="row100">
                                     <td><input name="bro_name2" id="bro_name2" type="text" class="form-control" /></td>
                                     <td><input name="bro_old2" id="bro_old2" type="number" class="form-control" /></td>
                                     <td><input name="bro_career2" id="bro_career2" type="text" class="form-control" /></td>
@@ -283,7 +284,7 @@
                                     <td><input name="bro_tel2" id="bro_tel2" type="number" class="form-control" /></td>
                                 </tr>
 
-                                <tr>
+                                <tr class="row100">
                                     <td><input name="bro_name3" id="bro_name3" type="text" class="form-control" /></td>
                                     <td><input name="bro_old3" id="bro_old3" type="number" class="form-control" /></td>
                                     <td><input name="bro_career3" id="bro_career3" type="text" class="form-control" /></td>
@@ -291,7 +292,7 @@
                                     <td><input name="bro_tel3" id="bro_tel3" type="number" class="form-control" /></td>
                                 </tr>
 
-                                <tr>
+                                <tr class="row100">
                                     <td><input name="bro_name4" id="bro_name4" type="text" class="form-control" /></td>
                                     <td><input name="bro_old4" id="bro_old4" type="number" class="form-control" /></td>
                                     <td><input name="bro_career4" id="bro_career4" type="text" class="form-control" /></td>
@@ -299,7 +300,7 @@
                                     <td><input name="bro_tel4" id="bro_tel4" type="number" class="form-control" /></td>
                                 </tr>
 
-                                <tr>
+                                <tr class="row100">
                                     <td><input name="bro_name5" id="bro_name5" type="text" class="form-control" /></td>
                                     <td><input name="bro_old5" id="bro_old5" type="number" class="form-control" /></td>
                                     <td><input name="bro_career5" id="bro_career5" type="text" class="form-control" /></td>
@@ -307,7 +308,7 @@
                                     <td><input name="bro_tel5" id="bro_tel5" type="number" class="form-control" /></td>
                                 </tr>
 
-                                <tr>
+                                <tr class="row100">
                                     <td><input name="bro_name6" id="bro_name6" type="text" class="form-control" /></td>
                                     <td><input name="bro_old6" id="bro_old6" type="number" class="form-control" /></td>
                                     <td><input name="bro_career6" id="bro_career6" type="text" class="form-control" /></td>
@@ -326,6 +327,8 @@
             </form>
         </div>
     </div>
+
+    <script src="../dist/vertical-responsive-menu.min.js"></script>
 
     <script src="getParamsFromUrl.js"></script>
     <script src="getDataStorageForm2.js"></script>

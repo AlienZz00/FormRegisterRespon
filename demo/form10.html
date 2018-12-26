@@ -27,6 +27,9 @@
 <script src="public/javascripts/bootstrap.bundle.min.js"></script>
 <script src="public/javascripts/bootstrap.bundle.min.js.map"></script>
 
+<script src="../dist/vertical-responsive-menu.min.js"></script>
+
+
 
 
 
@@ -138,16 +141,15 @@
 
     <div class="wrapper">
         <div class="container_PA">
-            <form method="POST" id="form1" class="needs-validation" novalidate>
+            <form method="POST" id="form10" class="needs-validation" novalidate>
 
                 <fieldset>
-                    <div id="ribbon"></div>
 
                     <div class="table100 ver5 m-b-110 ">
                         <table data-vertable="ver5">
                             <thead>
                                 <tr class="row100 head head1">
-                                    <th class="column100 column1 " data-column="column1">รายละเอียดอื่นๆ</th>
+                                    <th class="" data-column="column1">รายละเอียดอื่นๆ</th>
                                 </tr>
                             </thead>
                         </table>
@@ -326,21 +328,21 @@
                     <hr class="hr-primary">
 
 
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th id="table1_name" scope="col">สวัสดิการอื่นจากทีทำงานปัจจุบันล่าสุดต่อเดือน</th>
-                                    <th id="table1_age" scope="col"></th>
+                    <div class="table100 ver5">
+                        <table class="hide-columns responsive-table" data-vertable="ver5">
+                            <thead>
+                                <tr class="row100">
+                                    <th scope="col">สวัสดิการอื่นจากทีทำงานปัจจุบันล่าสุดต่อเดือน</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
+
                                 <tr class="row100">
-                                    <th scope="row">เงินโบนัส</th>
+                                    <td>เงินโบนัส</td>
                                     <td>
                                         <div class="input-group">
-                                            <input name="my_bonus" id="my_bonus" type="number" class="column100 column2 form-control col-sm-3"
-                                                data-column="column2">
+                                            <input name="my_bonus" id="my_bonus" type="number" class="form-control col-sm-3">
                                             <div class="input-group-append">
                                                 <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
@@ -351,11 +353,10 @@
 
 
                                 <tr class="row100">
-                                    <td class="column100 column1" data-column="column1">เงินกองทุนสำรองเลี้ยงชีพ</td>
+                                    <td>เงินกองทุนสำรองเลี้ยงชีพ</td>
                                     <td>
                                         <div class="input-group">
-                                            <input name="my_reserve" id="my_reserve" type="number" class="column100 column2 form-control col-sm-3"
-                                                data-column="column2">
+                                            <input name="my_reserve" id="my_reserve" type="number" class="form-control col-sm-3">
                                             <div class="input-group-append">
                                                 <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
@@ -364,11 +365,10 @@
                                 </tr>
 
                                 <tr class="row100">
-                                    <td class="column100 column1" data-column="column1">ค่ารักษาพยาบาล</td>
+                                    <td class=" data-column=" column1">ค่ารักษาพยาบาล</td>
                                     <td>
                                         <div class="input-group">
-                                            <input name="my_medical" id="my_medical" type="number" class="column100 column2 form-control col-sm-3"
-                                                data-column="column2">
+                                            <input name="my_medical" id="my_medical" type="number" class="form-control col-sm-3">
                                             <div class="input-group-append">
                                                 <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
@@ -377,11 +377,10 @@
                                 </tr>
 
                                 <tr class="row100">
-                                    <td class="column100 column1" data-column="column1">ประกันชีวิต</td>
+                                    <td class=" data-column=" column1">ประกันชีวิต</td>
                                     <td>
                                         <div class="input-group">
-                                            <input name="Life_insurance" id="Life_insurance" type="number" class="column100 column2 form-control col-sm-3"
-                                                data-column="column2">
+                                            <input name="Life_insurance" id="Life_insurance" type="number" class="form-control col-sm-3">
                                             <div class="input-group-append">
                                                 <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
@@ -390,11 +389,10 @@
                                 </tr>
 
                                 <tr class="row100">
-                                    <td class="column100 column1" data-column="column1">ค่าตำแหน่ง</td>
+                                    <td class=" data-column=" column1">ค่าตำแหน่ง</td>
                                     <td>
                                         <div class="input-group">
-                                            <input name="Position_value" id="Position_value" type="number" class="column100 column2 form-control col-sm-3"
-                                                data-column="column2">
+                                            <input name="Position_value" id="Position_value" type="number" class="form-control col-sm-3">
                                             <div class="input-group-append">
                                                 <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
@@ -404,11 +402,10 @@
                                 </tr>
 
                                 <tr class="row100">
-                                    <td class="column100 column1" data-column="column1">ค่าพาหนะ</td>
+                                    <td class=" data-column=" column1">ค่าพาหนะ</td>
                                     <td>
                                         <div class="input-group">
-                                            <input name="traveling_expen" id="traveling_expen" type="number" class="column100 column2 form-control col-sm-3"
-                                                data-column="column2">
+                                            <input name="traveling_expen" id="traveling_expen" type="number" class="form-control col-sm-3">
                                             <div class="input-group-append">
                                                 <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
@@ -417,11 +414,10 @@
                                 </tr>
 
                                 <tr class="row100">
-                                    <td class="column100 column1" data-column="column1">ค่าครองชีพ/เบี้ยขยัน</td>
+                                    <td class=" data-column=" column1">ค่าครองชีพ/เบี้ยขยัน</td>
                                     <td>
                                         <div class="input-group">
-                                            <input name="diligence" id="diligence" type="number" class="column100 column2 form-control col-sm-3"
-                                                data-column="column2">
+                                            <input name="diligence" id="diligence" type="number" class="form-control col-sm-3">
                                             <div class="input-group-append">
                                                 <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
@@ -430,11 +426,10 @@
                                 </tr>
 
                                 <tr class="row100">
-                                    <td class="column100 column1" data-column="column1">เงินช่วยเหลือ/อื่นๆ</td>
+                                    <td class=" data-column=" column1">เงินช่วยเหลือ/อื่นๆ</td>
                                     <td>
                                         <div class="input-group">
-                                            <input name="Subsidy" id="Subsidy" type="number" class="column100 column2 form-control col-sm-3"
-                                                data-column="column2">
+                                            <input name="Subsidy" id="Subsidy" type="number" class="form-control col-sm-3">
                                             <div class="input-group-append">
                                                 <span class="input-group-text" id="basic-addon2">บาท</span>
                                             </div>
@@ -445,7 +440,7 @@
                         </table>
                     </div>
 
-                  
+
 
                     <button type="submit" id="btn_next" class="button"><span>ต่อไป &#8594;</span>
 

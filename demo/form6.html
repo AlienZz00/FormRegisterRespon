@@ -36,6 +36,9 @@
 <script src="public/javascripts/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
 <script src="../dist/vertical-responsive-menu.min.js"></script>
 
+<script src="../dist/vertical-responsive-menu.min.js"></script>
+
+
 
 <script src="public/javascripts/jsTable.js"></script>
 
@@ -140,226 +143,177 @@
 
         <div class="wrapper">
                 <div class="container_PA">
-                        <form method="POST" id="form1" class="needs-validation" novalidate>
-
-
+                        <form method="POST" id="form6" class="needs-validation" novalidate>
                                 <fieldset>
-                                        <img src="public/stylesheets/vapper_paper_epg.png" id="ribbon_resize">
-
                                         <div class="table100 ver5 m-b-110 ">
                                                 <table data-vertable="ver5">
                                                         <thead>
                                                                 <tr class="row100 head head1">
-                                                                        <th class="column100 column1 " data-column="column1">บุคคลที่ติดต่อได้โดยไม่ใช่ญาติพี่น้อง</th>
+                                                                        <th>บุคคลที่ติดต่อได้โดยไม่ใช่ญาติพี่น้อง</th>
                                                                 </tr>
                                                         </thead>
                                                 </table>
                                         </div>
 
-                                        <div class="fieldset-content" id="page6">
+                                        <div class="table100 ver5">
+                                                <table class="flip-scroll responsive-table" data-vertable="ver5">
+                                                        <thead>
+                                                                <tr class="row100">
+                                                                        <th scope="col">ชื่อ-นามสกุล</th>
+                                                                        <th scope="col">ความสัมพันธ์</th>
+                                                                        <th scope="col">อาชีพ</th>
+                                                                        <th scope="col">สถานที่ทำงาน/<br>โทรศัพท์</th>
 
-                                                <div class="table100 ver5 m-b-110">
-                                                        <table data-vertable="ver5">
-                                                                <thead>
-                                                                        <tr class="row100 head">
-                                                                                <th class="column100 column1" id="column1"
-                                                                                        data-column="column1">ชื่อ-นามสกุล</th>
-                                                                                <th class="column100 column2" id="column2"
-                                                                                        data-column="column2">ความสัมพันธ์</th>
-                                                                                <th class="column100 column3" id="column3"
-                                                                                        data-column="column3">อาชีพ</th>
-                                                                                <th class="column100 column4" id="column4"
-                                                                                        data-column="column4">สถานที่ทำงาน/โทรศัพท์</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr class="row100">
+                                                                        <td><input name="fri_name1" id="fri_name1" type="text"
+                                                                                        class="form-control" id="column1"></td>
 
-                                                                        </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                        <tr class="row100">
-                                                                                <td><input name="fri_name1" id="fri_name1"
-                                                                                                type="text" class="column100 column1 form-control"
-                                                                                                id="column1"
-                                                                                                data-column="column1"></td>
+                                                                        <td><input name="fri_rela1" id="fri_rela1" type="text"
+                                                                                        class="form-control" id="column2"></td>
 
-                                                                                <td><input name="fri_rela1" id="fri_rela1"
-                                                                                                type="text" class="column100 column2 form-control"
-                                                                                                id="column2"
-                                                                                                data-column="column2"></td>
+                                                                        <td><input name="fri_career1" id="fri_career1"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column3"></td>
 
-                                                                                <td><input name="fri_career1" id="fri_career1"
-                                                                                                type="text" class="column100 column3 form-control"
-                                                                                                id="column3"
-                                                                                                data-column="column3"></td>
+                                                                        <td><input name="fri_office_tel1" id="fri_office_tel1"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column4"></td>
+                                                                </tr>
 
-                                                                                <td><input name="fri_office_tel1" id="fri_office_tel1"
-                                                                                                type="text" class="column100 column4 form-control"
-                                                                                                id="column4"
-                                                                                                data-column="column4"></td>
-                                                                        </tr>
+                                                                <tr class="row100">
+                                                                        <td><input name="fri_name2" id="fri_name2" type="text"
+                                                                                        class="form-control" id="column1"></td>
 
-                                                                        <tr class="row100">
-                                                                                <td><input name="fri_name2" id="fri_name2"
-                                                                                                type="text" class="column100 column1 form-control"
-                                                                                                id="column1"
-                                                                                                data-column="column1"></td>
+                                                                        <td><input name="fri_rela2" id="fri_rela2" type="text"
+                                                                                        class="form-control" id="column2"></td>
 
-                                                                                <td><input name="fri_rela2" id="fri_rela2"
-                                                                                                type="text" class="column100 column2 form-control"
-                                                                                                id="column2"
-                                                                                                data-column="column2"></td>
+                                                                        <td><input name="fri_career2" id="fri_career2"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column3"></td>
 
-                                                                                <td><input name="fri_career2" id="fri_career2"
-                                                                                                type="text" class="column100 column3 form-control"
-                                                                                                id="column3"
-                                                                                                data-column="column3"></td>
+                                                                        <td><input name="fri_office_tel2" id="fri_office_tel2"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column4"></td>
+                                                                </tr>
 
-                                                                                <td><input name="fri_office_tel2" id="fri_office_tel2"
-                                                                                                type="text" class="column100 column4 form-control"
-                                                                                                id="column4"
-                                                                                                data-column="column4"></td>
-                                                                        </tr>
+                                                                <tr class="row100">
+                                                                        <td><input name="fri_name3" id="fri_name3" type="text"
+                                                                                        class="form-control" id="column1"></td>
 
-                                                                        <tr class="row100">
-                                                                                <td><input name="fri_name3" id="fri_name3"
-                                                                                                type="text" class="column100 column1 form-control"
-                                                                                                id="column1"
-                                                                                                data-column="column1"></td>
+                                                                        <td><input name="fri_rela3" id="fri_rela3" type="text"
+                                                                                        class="form-control" id="column2"></td>
 
-                                                                                <td><input name="fri_rela3" id="fri_rela3"
-                                                                                                type="text" class="column100 column2 form-control"
-                                                                                                id="column2"
-                                                                                                data-column="column2"></td>
+                                                                        <td><input name="fri_career3" id="fri_caree3"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column3"></td>
 
-                                                                                <td><input name="fri_career3" id="fri_caree3"
-                                                                                                type="text" class="column100 column3 form-control"
-                                                                                                id="column3"
-                                                                                                data-column="column3"></td>
+                                                                        <td><input name="fri_office_tel" id="fri_office_tel"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column4"></td>
+                                                                </tr>
 
-                                                                                <td><input name="fri_office_tel" id="fri_office_tel"
-                                                                                                type="text" class="column100 column4 form-control"
-                                                                                                id="column4"
-                                                                                                data-column="column4"></td>
-                                                                        </tr>
+                                                                <tr class="row100">
+                                                                        <td><input name="fri_name4" id="fri_name4" type="text"
+                                                                                        class="form-control" id="column1"></td>
 
-                                                                        <tr class="row100">
-                                                                                <td><input name="fri_name4" id="fri_name4"
-                                                                                                type="text" class="column100 column1 form-control"
-                                                                                                id="column1"
-                                                                                                data-column="column1"></td>
+                                                                        <td><input name="fri_rela4" id="fri_rela4" type="text"
+                                                                                        class="form-control" id="column2"></td>
 
-                                                                                <td><input name="fri_rela4" id="fri_rela4"
-                                                                                                type="text" class="column100 column2 form-control"
-                                                                                                id="column2"
-                                                                                                data-column="column2"></td>
+                                                                        <td><input name="fri_career4" id="fri_career4"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column3"></td>
 
-                                                                                <td><input name="fri_career4" id="fri_career4"
-                                                                                                type="text" class="column100 column3 form-control"
-                                                                                                id="column3"
-                                                                                                data-column="column3"></td>
+                                                                        <td><input name="fri_office_tel4" id="fri_office_tel4"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column4"></td>
+                                                                </tr>
 
-                                                                                <td><input name="fri_office_tel4" id="fri_office_tel4"
-                                                                                                type="text" class="column100 column4 form-control"
-                                                                                                id="column4"
-                                                                                                data-column="column4"></td>
-                                                                        </tr>
+                                                                <tr class="row100">
+                                                                        <td><input name="fri_name5" id="fri_name5" type="text"
+                                                                                        class="form-control" id="column1"></td>
 
-                                                                        <tr class="row100">
-                                                                                <td><input name="fri_name5" id="fri_name5"
-                                                                                                type="text" class="column100 column1 form-control"
-                                                                                                id="column1"
-                                                                                                data-column="column1"></td>
+                                                                        <td><input name="fri_rela5" id="fri_rela5" type="text"
+                                                                                        class="form-control" id="column2"></td>
 
-                                                                                <td><input name="fri_rela5" id="fri_rela5"
-                                                                                                type="text" class="column100 column2 form-control"
-                                                                                                id="column2"
-                                                                                                data-column="column2"></td>
+                                                                        <td><input name="fri_career5" id="fri_career5"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column3"></td>
 
-                                                                                <td><input name="fri_career5" id="fri_career5"
-                                                                                                type="text" class="column100 column3 form-control"
-                                                                                                id="column3"
-                                                                                                data-column="column3"></td>
+                                                                        <td><input name="fri_office_tel5" id="fri_office_tel5"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column4"></td>
+                                                                </tr>
 
-                                                                                <td><input name="fri_office_tel5" id="fri_office_tel5"
-                                                                                                type="text" class="column100 column4 form-control"
-                                                                                                id="column4"
-                                                                                                data-column="column4"></td>
-                                                                        </tr>
+                                                                <tr class="row100">
+                                                                        <td><input name="fri_name6" id="fri_name6" type="text"
+                                                                                        class="form-control" id="column1"></td>
 
-                                                                        <tr class="row100">
-                                                                                <td><input name="fri_name6" id="fri_name6"
-                                                                                                type="text" class="column100 column1 form-control"
-                                                                                                id="column1"
-                                                                                                data-column="column1"></td>
+                                                                        <td><input name="fri_rela6" id="fri_rela6" type="text"
+                                                                                        class="form-control" id="column2"></td>
 
-                                                                                <td><input name="fri_rela6" id="fri_rela6"
-                                                                                                type="text" class="column100 column2 form-control"
-                                                                                                id="column2"
-                                                                                                data-column="column2"></td>
+                                                                        <td><input name="fri_career6" id="fri_career6"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column3"></td>
 
-                                                                                <td><input name="fri_career6" id="fri_career6"
-                                                                                                type="text" class="column100 column3 form-control"
-                                                                                                id="column3"
-                                                                                                data-column="column3"></td>
-
-                                                                                <td><input name="fri_office_tel6" id="fri_office_tel6"
-                                                                                                type="text" class="column100 column4 form-control"
-                                                                                                id="column4"
-                                                                                                data-column="column4"></td>
-                                                                        </tr>
-                                                        </table>
-                                                </div>
-
-                                                <hr class="hr-primary">
-
-
-                                                <div class="table100 ver5 m-b-110 ">
-                                                        <table data-vertable="ver5">
-                                                                <thead>
-                                                                        <tr class="row100 head head1">
-                                                                                <th class="column100 column1 "
-                                                                                        data-column="column1">ในกรณีเร่งด่วนผู้ใกล้ชิดที่สามารถติดต่อข้าพเจ้าได้</th>
-                                                                        </tr>
-                                                                </thead>
-                                                        </table>
-                                                </div>
-
-
-
-
-                                                <div class="form-row">
-                                                        <div class="col-3">
-                                                                <label>ชื่อ</label>
-                                                                <input type="text" name="EM_Fname" id="EM_Fname" class="form-control">
-                                                        </div>
-                                                        <div class="col-3">
-                                                                <label>นามสกุล</label>
-                                                                <input type="text" name="EM_Lname" id="EM_Lname" class="form-control">
-                                                        </div>
-                                                        <div class="col-3">
-                                                                <label>ความสัมพันธ์</label>
-                                                                <input type="text" name="EM_relation" id="EM_relation"
-                                                                        class="form-control">
-                                                        </div>
-                                                        <div class="col-3">
-                                                                <label>อาชีพ</label>
-                                                                <input type="text" name="EM_Occupation" id="EM_Occupation"
-                                                                        class="form-control">
-                                                        </div>
-                                                </div>
-                                                <div class="form-row">
-                                                        <div class="col-6">
-                                                                <label>สถานที่ติดต่อ/เบอร์โทร</label>
-                                                                <input type="text" name="EM_phone" id="EM_phone" class="form-control">
-                                                        </div>
-                                                </div>
+                                                                        <td><input name="fri_office_tel6" id="fri_office_tel6"
+                                                                                        type="text" class="form-control"
+                                                                                        id="column4"></td>
+                                                                </tr>
+                                                </table>
                                         </div>
 
+                                        <hr class="hr-primary">
+
+
+                                        <div class="table100 ver5 m-b-110 ">
+                                                <table data-vertable="ver5">
+                                                        <thead>
+                                                                <tr class="row100 head head1">
+                                                                        <th>ในกรณีเร่งด่วนผู้ใกล้ชิดที่สามารถติดต่อข้าพเจ้าได้</th>
+
+                                                                </tr>
+                                                        </thead>
+                                                </table>
+                                        </div>
+
+
+                                        <div class="form-row">
+                                                <div class="col-sm-3">
+                                                        <label>ชื่อ</label>
+                                                        <input type="text" name="EM_Fname" id="EM_Fname" class="form-control">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                        <label>นามสกุล</label>
+                                                        <input type="text" name="EM_Lname" id="EM_Lname" class="form-control">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                        <label>ความสัมพันธ์</label>
+                                                        <input type="text" name="EM_relation" id="EM_relation" class="form-control">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                        <label>อาชีพ</label>
+                                                        <input type="text" name="EM_Occupation" id="EM_Occupation"
+                                                                class="form-control">
+                                                </div>
+                                        </div>
+                                        <div class="form-row">
+                                                <div class="col-sm-6">
+                                                        <label>สถานที่ติดต่อ/เบอร์โทร</label>
+                                                        <input type="text" name="EM_phone" id="EM_phone" class="form-control">
+                                                </div>
+                                        </div>
                                         <button type="submit" id="btn_next" class="button"><span>ต่อไป &#8594;</span>
 
 
+
                                 </fieldset>
+                        </form>
                 </div>
-                </form>
         </div>
+
 
         <script src="getParamsFromUrl.js"></script>
         <script src="getDataStorageForm6.js"></script>

@@ -136,11 +136,9 @@
 
         <div class="wrapper">
                 <div class="container_PA">
-                        <form method="POST" id="form1" class="needs-validation" novalidate>
-
-
+                        <form method="POST" id="form4" class="needs-validation" novalidate>
                                 <fieldset>
-                                        <img src="vapper_paper_epg.png" id="ribbon_resize">
+
                                         <div class="table100 ver5 m-b-110 ">
                                                 <table data-vertable="ver5">
                                                         <thead>
@@ -152,23 +150,16 @@
                                         </div>
 
 
-                                        <div class="table100 ver5 m-b-110">
-                                                <table data-vertable="ver5">
+                                        <div class="table100 ver5">
+                                                <table class="flip-scroll responsive-table" data-vertable="ver5">
                                                         <thead>
-                                                                <tr class="row100 head">
-                                                                        <th class="column100 column1" id="column1"
-                                                                                data-column="column1">ชื่อบริษัท
-                                                                                / ที่อยู่ / ประเภทธุรกิจ</th>
-                                                                        <th class="column100 column2" id="column2"
-                                                                                data-column="column2">จาก-ถึง</th>
-                                                                        <th class="column100 column3" id="column3"
-                                                                                data-column="column3">ตำแหน่ง</th>
-                                                                        <th class="column100 column4" id="column4"
-                                                                                data-column="column4">เงินเดือนล่าสุด</th>
-                                                                        <th class="column100 column5" id="column5"
-                                                                                data-column="column5">ลักษณะงานที่ทำ</th>
-                                                                        <th class="column100 column6" id="column6"
-                                                                                data-column="column6">สาเหตุที่ออก</th>
+                                                                <tr class="row100">
+                                                                        <th scope="col">ชื่อบริษัท </th>
+                                                                        <th scope="col">จาก-ถึง</th>
+                                                                        <th scope="col">ตำแหน่ง</th>
+                                                                        <th scope="col">เงินเดือนล่าสุด</th>
+                                                                        <th scope="col">ลักษณะงานที่ทำ</th>
+                                                                        <th scope="col">สาเหตุที่ออก</th>
 
                                                                 </tr>
                                                         </thead>
@@ -347,10 +338,10 @@
 
                                         <h1>ประวัติการฝึกอบรม (Training Record)</h1>
 
-                                        <div class="table100 ver5 m-b-110">
-                                                <table data-vertable="ver5">
+                                        <div class="table100 ver5">
+                                                <table class="flip-scroll responsive-table" data-vertable="ver5">
                                                         <thead>
-                                                                <tr class="row100 head">
+                                                                <tr class="row100">
                                                                         <th class="column100 column1" data-column="column1">หัวข้อวิชาที่ฝึกอบรม</th>
                                                                         <th class="column100 column2" data-column="column2">ระยะเวลาที่อบรม</th>
                                                                         <th class="column100 column3" data-column="column3">สถาบัน</th>
@@ -487,6 +478,8 @@
                 </div>
                 </form>
         </div>
+
+        <script src="../dist/vertical-responsive-menu.min.js"></script>
 
         <script src="getParamsFromUrl.js"></script>
         <script src="getDataStorageForm4.js"></script>

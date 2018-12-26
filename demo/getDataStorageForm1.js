@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
   $("#news").val(sessionStorage.getItem('news'));
-  $("#news").val(sessionStorage.getItem('news'));
   $("#position1").val(sessionStorage.getItem('position1'));
   $("#position2").val(sessionStorage.getItem('position2'));
   $("#my_salary_want").val(sessionStorage.getItem('my_salary_want'));
@@ -228,18 +227,3 @@ $(document).ready(function () {
   }
 });
 
-
-
-// function getBase64Image(img) {
-//   var canvas = document.createElement("canvas");
-
-
-//   var ctx = canvas.getContext("2d");
-//   ctx.drawImage(img, 0, 0);
-//   canvas.style.width = '50%'
-//   canvas.style.height = 'auto'
-
-//   var dataURL = canvas.toDataURL("image/png");
-
-//   return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
-// };
